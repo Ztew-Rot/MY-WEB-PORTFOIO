@@ -1,0 +1,85 @@
+
+<html lang="en">
+    <head>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet"/>
+        <link href="mediaqueries.css" rel= "stylesheet"/>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav id ='desktop-nav'>
+            <div class="logo" onclick="location.href='index.html'">Adam KS</div>
+            <ul class='navlinks'>
+                <li><a href = 'index.html'>Home</a></li>
+                <li><a href = 'about.html'>About Me</a></li>
+                <li><a href = 'experience.html'>Experience</a></li>
+                <li><a href = 'projects.html'>Projects</a></li>
+                <li><a href = 'contact.html'>Contact Me</a></li>
+            </ul>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class = 'logo'>Adam KS</div>
+            <div class = 'hamburger-menu'>
+                <div class = 'hamburger-icon' onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <div class ='menu-links'>
+                <li><a href = 'index.html' onclick='toggleMenu()'>Home</a></li>
+                <li><a href = 'about.html' onclick='toggleMenu()'>About Me</a></li>
+                <li><a href = 'projects.html' onclick='toggleMenu()'>Projects</a></li>
+                <li><a href = 'experience.html' onclick='toggleMenu()'>Experience</a></li>
+                <li><a href = 'contact.html' onclick='toggleMenu()'>Contact Me</a></li>
+            </div>
+            </div>
+        </nav>
+<section id="projects">
+    <h1>Projects</h1>
+
+    <div class="project-item">
+      <h2>Project 1: Responsive Portfolio Website</h2>
+      <p>
+        A clean and responsive personal portfolio website designed to showcase my skills, experience, and projects. It’s fully responsive across devices and demonstrates my knowledge of HTML, CSS, and JavaScript.
+      </p>
+      <ul>
+        <li><a href="https://github.com/yourusername/portfolio-website" target="_blank">View Code</a></li>
+        <li><a href="#" target="_blank">Live Demo</a></li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h2>Project 2: Credit Card Validator</h2>
+      <p>
+        A C program implementing Luhn's Algorithm to validate credit card numbers. This project demonstrates my understanding of algorithms and C programming fundamentals.
+      </p>
+      <ul>
+        <li><a href="https://github.com/code50/175570338/tree/main/caesar" target="_blank">View Code</a></li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h2>Project 3: Caesar Cipher</h2>
+      <p>
+        A simple encryption program written in C, which applies the Caesar cipher algorithm to encrypt messages by shifting letters by a specific number of positions. This project helped me solidify my understanding of loops and character manipulation.
+      </p>
+      <ul>
+        <li><a href="https://github.com/code50/175570338/tree/main/caesar" target="_blank">View Code</a></li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h2>Project 4: Image Blur Filter</h2>
+      <p>
+        An image processing project in C that applies a blur effect to an image using a box blur algorithm. This helped me work with multidimensional arrays and image data manipulation.
+      </p>
+      <ul>
+        <li><a href="https://github.com/code50/175570338/tree/main/filter-less" target="_blank">View Code</a></li>
+      </ul>
+    </div>
+    </section>
+    <script src="app.js"></script>
+    </body>
+</html>
